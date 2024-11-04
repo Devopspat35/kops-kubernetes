@@ -99,11 +99,13 @@ kops create secret --name ${NAME} sshpublickey admin -i ~/.ssh/id_rsa.pub
 kops update cluster ${NAME} --yes
 ```
 # 10a) Validate your cluster(KOPS will take some time to create cluster ,Execute below commond after 3 or 4 mins)
-
-kops validate cluster
 	   
 	   Suggestions:
- * validate cluster: kops validate cluster --wait 10m
+
+ kops validate cluster --wait 10m
+
+
+ 
  * list nodes: kubectl get nodes --show-labels
  * ssh to the master: ssh -i ~/.ssh/id_rsa ubuntu@api.class.k8s.local
  * the ubuntu user is specific to Ubuntu. If not using Ubuntu please use the appropriate user based on your OS.
