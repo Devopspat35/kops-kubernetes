@@ -131,9 +131,17 @@ sudo passwd ubuntu
 ```
 
 ### 11c) To list nodes
-
+        
 	  kubectl get nodes 
+
+### 11d) To create namespace
  
+         kubectl create namespace dev
+
+	 #To set context path to created namespace
+  
+           kubectl config set-context --current --namespace=dev
+	   
 ## 12) To Delete Cluster
 
    kops delete cluster --name=${NAME} --state=${KOPS_STATE_STORE} --yes  
