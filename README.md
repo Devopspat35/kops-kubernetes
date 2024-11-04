@@ -46,6 +46,10 @@ sudo ./aws/install
  	sudo wget https://github.com/kubernetes/kops/releases/download/v1.22.0/kops-linux-amd64
  	sudo chmod +x kops-linux-amd64
  	sudo mv kops-linux-amd64 /usr/local/bin/kops
+
+  #verify kops intallation:
+
+        kops version
  
 ## 4) Install kubectl kubernetes client if it is not already installed
 ```sh
