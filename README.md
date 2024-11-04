@@ -30,7 +30,7 @@
  ```
  ##  2a) install AWSCLI using the apt package manager
   ```sh
-sudo snap install aw-scli --classic 
+sudo snap install aw-cli --classic 
  ```
  ## or
  
