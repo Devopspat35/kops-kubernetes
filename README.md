@@ -30,9 +30,11 @@
  ```
  ##  2a) install AWSCLI using the apt package manager
   ```sh
- sudo apt install awscli -y 
+sudo snap install aw-scli --classic 
  ```
- ## or 2b) install AWSCLI using the script below
+ ## or
+ 
+ 2b) install AWSCLI using the script below
  ```sh
 sudo apt install unzip tree nano vim  -y
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
